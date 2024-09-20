@@ -12,7 +12,7 @@
 </template>
 
 <script>
-  import questions from '~/assets/questions.json';
+  import questions from '~/questions.json';
 
   export default {
   setup() {
