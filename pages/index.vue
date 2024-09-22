@@ -3,7 +3,7 @@
 		<div class="container vh-100 d-flex flex-column">
 			<div
 				class="flex-grow-1 d-flex flex-column justify-content-center align-items-start">
-				<h1><span style="font-size: 2rem;">Quiz:</span><br>Tes Pengetahuan Nawasena 2024</h1>
+				<h1><br>Tes Pengetahuan Nawasena 2024</h1>
 
 				<label for="username">Masukkan Username</label>
 				<input
