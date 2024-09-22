@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h2 style="text-align: center;">{{ question }}</h2>
-    <div class="d-flex flex-column">
+    <h2 style="text-align: center; padding: 0 20px 0 20px;">{{ question }}</h2>
+    <div class="answer d-flex justify-content-around mt-2">
       <Answer
         v-for="(ans, index) in answer"
         :answer="ans"
@@ -55,4 +55,11 @@ export default defineComponent({
 </script>
 
 <style scoped>
+.answer {
+  flex-direction: row;
+
+  @media only screen and (max-width: 900px){
+    flex-direction: column;
+  }
+}
 </style>

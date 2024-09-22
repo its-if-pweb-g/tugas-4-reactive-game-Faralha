@@ -1,5 +1,5 @@
 <template>
-	<div class="p-2 button" @click="selectAnswer" :class="{ selected: isSelected}">
+	<div class="p-2 button d-flex justify-content-center align-items-center" @click="selectAnswer" :class="{ selected: isSelected}">
 		<p class="answer-text">{{ answer }}</p>
 	</div>
 </template>
@@ -27,18 +27,20 @@ export default {
 
 <style scoped>
 .button {
+	width: 100%;
+	background-color: white;
 	border: 1px solid black;
-	border-radius: 3px;
+	border-radius: 10px;
 	margin: 2px;
 	transition: all 0.3s ease-in;
 }
 .button:hover {
-	background-color: #c5c4c4;
+	background-color: var(--gray);
 	cursor: pointer;
 }
 
 .selected {
-	background-color: #c5c4c4;
+	background-color: var(--gray);
 }
 
 .answer-text {
