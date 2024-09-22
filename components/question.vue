@@ -1,39 +1,58 @@
 <template>
   <div>
-    <h2>{{ question }}</h2>
-
+    <h2 style="text-align: center;">{{ question }}</h2>
     <div class="d-flex flex-column">
-      <Answer v-for="ans in answer" :answer="ans" :key="ans" @answered="handleAnswer"/>
+      <Answer
+        v-for="(ans, index) in answer"
+        :answer="ans"
+        :key="index"
+        :isSelected="selectedAnswer === ans"
+        @answered="handleAnswer(ans)"
+      />
     </div>
   </div>
 </template>
 
 <script lang="ts">
-  export default defineComponent({
-    props: {
-      question: {
-        type: String,
-        required: true,
-      },
-      answer: {
-        type: Array as () => string[],
-        required: true,
-      },
-      correctAnswer: {
-        type: String,
-        required: true,
-      },
+import { defineComponent, ref } from 'vue';
+
+export default defineComponent({
+
+  props: {
+    question: {
+      type: String,
+      required: true,
     },
-    methods: {
-      handleAnswer(selectedAnswer: string) {
-        const isCorrect = selectedAnswer === this.correctAnswer;
-        this.$emit('answered', isCorrect);
-      }
+    answer: {
+      type: Array as () => string[],
+      required: true,
+    },
+    correctAnswer: {
+      type: String,
+      required: true,
     },
   },
-  );
+  setup(props, { emit }) {
+    const selectedAnswer = ref<string | null>(null);
+
+    const handleAnswer = (selectedAnswerValue: string) => {
+
+      if (selectedAnswer.value === selectedAnswerValue) {
+        return;
+      }
+
+      selectedAnswer.value = selectedAnswerValue;
+      const isCorrect = selectedAnswerValue === props.correctAnswer;
+      emit('answered', { isCorrect });
+    };
+
+    return {
+      selectedAnswer,
+      handleAnswer
+    };
+  }
+});
 </script>
 
 <style scoped>
-
 </style>

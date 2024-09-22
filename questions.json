@@ -1,12 +1,53 @@
 [
   {
-    "question": "What is the capital of France?",
-    "answer": ["Paris", "London", "Berlin", "Madrid"],
-    "correctAnswer": "Paris"
+    "question": "Ada Berapa Lab di Teknik Informatika?",
+    "answer": ["6", "7", "8", "9"],
+    "correctAnswer": "8"
   },
   {
-    "question": "What is the capital of Spain?",
-    "answer": ["Paris", "London", "Berlin", "Madrid"],
-    "correctAnswer": "Madrid"
+    "question": "FTEIC dibentuk pertama kali pada tahun?",
+    "answer": ["2018", "2019", "2020", "2021"],
+    "correctAnswer": "2020"
+  },
+  {
+    "question": "Apa Makna dari Warna Kuning Gading pada logo Teknik Informatika?",
+    "answer": ["Suci", "Ilmu Pengetahuan", "Integrasi", "Kelembutan"],
+    "correctAnswer": "Integrasi"
+  },
+  {
+    "question": "Lanjutkan Mars ini: SATUKAN SUARAMU, BERSATU DALAM BIRU. ....",
+    "answer": ["BANGGAKAN NAMA INI, SELAMANYA SAMPAI MATI", "JADIKAN HARI INI, PELAJARAN UNTUK NANTI", "DENGARLAH SATU NAMA, TEKNIK INFORMATIKA", "SEMANGAT KAMI TAKKAN PADAM, SELALU KAMI KOBARKAN"],
+    "correctAnswer": "BANGGAKAN NAMA INI, SELAMANYA SAMPAI MATI"
+  },
+  {
+    "question": "Apa nama Departemen yang membawahi Articster?",
+    "answer": ["CMI", "EDD", "SSD", "IA"],
+    "correctAnswer": "IA"
+  },
+  {
+    "question": "Siapa nama Dosen Informatika yang sekaligus menjadi langganan juri dalam lomba Competitive Programming tingkat nasional?",
+    "answer": ["Dr. Yudhi Purwananto, S.Kom., M.Kom.", "Dr. Dwi Sunaryono, S.Kom., M.Kom.", "Misbakhul Munir Irfan Subakti, S.Kom., M.Sc.", "Rully Soelaiman, S.Kom,M.Kom."],
+    "correctAnswer": "Rully Soelaiman, S.Kom,M.Kom."
+  },
+  {
+    "question": "Apa nama dari Software House milik TC?",
+    "answer": ["Flexoo", "Flexco", "Flexo"],
+    "correctAnswer": "Flexoo"
+  },
+  {
+    "question": "Ada Berapa Total Himpunan di FTEIC?",
+    "answer": ["5", "4", "6"],
+    "correctAnswer": "6"
+  },
+  {
+    "question": "Apa itu Presidium Eksekutif?",
+    "answer": ["KABEM saja", "KAHIMA saja", "Ketua Forum Musyawarah Besar", "Semua KAHIMA dan KABEM"],
+    "correctAnswer": "Semua KAHIMA dan KABEM"
+  },
+  {
+    "question": "Berdasarkan Rangkuman dari Wawancara Tendik dan Warga, manakah pernyataan dibawah yang benar?",
+    "answer": ["Mahasiswa sekarang menjadi lebih Apatis", "Beberapa Mahasiswa masih kurang sopan", "Banyak harapan akan Angkatan 23 untuk lebih solid", "Semuanya benar"],
+    "correctAnswer": "Semuanya benar"
   }
+
 ]
