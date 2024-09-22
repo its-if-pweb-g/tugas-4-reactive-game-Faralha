@@ -28,19 +28,19 @@ export default {
 <style scoped>
 .button {
 	width: 100%;
-	background-color: white;
-	border: 1px solid black;
+	background-color: var(--primary);
+	border: 1px solid var(--secondary);
 	border-radius: 10px;
 	margin: 2px;
 	transition: all 0.3s ease-in;
 }
 .button:hover {
-	background-color: var(--gray);
+	background-color: var(--selected);
 	cursor: pointer;
 }
 
 .selected {
-	background-color: var(--gray);
+	background-color: var(--selected);
 }
 
 .answer-text {

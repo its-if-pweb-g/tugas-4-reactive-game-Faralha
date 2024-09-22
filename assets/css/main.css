@@ -1,3 +1,30 @@
 :root {
   --gray: #dee2e6;
+  --selected: #8ecae6;
+  --primary: white;
+  --secondary: #000814;
+}
+
+.outer {
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+.back-button {
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--secondary);
+  fill: var(--secondary);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  color: var(--selected);
+  fill: var(--selected);
+  text-decoration: none !important;
+}
+
+a {
+  text-decoration: none !important;
 }

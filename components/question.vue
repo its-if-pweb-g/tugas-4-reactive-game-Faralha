@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2 style="text-align: center; padding: 0 20px 0 20px;">{{ question }}</h2>
-    <div class="answer d-flex justify-content-around mt-2">
+    <div class="answer d-flex justify-content-around mt-4">
       <Answer
         v-for="(ans, index) in answer"
         :answer="ans"
@@ -15,6 +15,7 @@
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
+
 
 export default defineComponent({
 
@@ -31,19 +32,22 @@ export default defineComponent({
       type: String,
       required: true,
     },
+    selectedAnswer: {
+      type: String,
+      default: null,
+    }
   },
   setup(props, { emit }) {
-    const selectedAnswer = ref<string | null>(null);
+    const selectedAnswer = ref<string | null>(props.selectedAnswer);
 
     const handleAnswer = (selectedAnswerValue: string) => {
-
       if (selectedAnswer.value === selectedAnswerValue) {
         return;
       }
 
       selectedAnswer.value = selectedAnswerValue;
       const isCorrect = selectedAnswerValue === props.correctAnswer;
-      emit('answered', { isCorrect });
+      emit('answered', { isCorrect, answer: selectedAnswerValue });
     };
 
     return {
@@ -57,6 +61,7 @@ export default defineComponent({
 <style scoped>
 .answer {
   flex-direction: row;
+  padding: 0 15px 0 15px;
 
   @media only screen and (max-width: 900px){
     flex-direction: column;
